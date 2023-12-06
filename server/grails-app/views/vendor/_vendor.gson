@@ -1,0 +1,17 @@
+import io.nuptse.pasal.Vendor
+
+model {
+	Vendor vendor
+}
+
+json {
+	id vendor.id
+	name vendor.name
+	description vendor.description
+	discount vendor.discount?:"0"
+	address vendor.address
+	phone vendor.phone?:""
+	email vendor.email?:""
+	updatedAt vendor?.lastUpdated?:""
+	createdAt vendor?.dateCreated?:""
+}

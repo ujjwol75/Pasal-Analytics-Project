@@ -1,0 +1,8 @@
+model {
+    Iterable<Map> clientList
+}
+
+json {
+    data clientList ?: []
+    success true
+}

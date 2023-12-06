@@ -1,0 +1,17 @@
+import io.nuptse.pasal.Customer
+
+model {
+	Customer customer
+}
+
+json {
+	id customer.id
+	name customer?.name
+	phone customer?.phone?:""
+	description customer?.description?:""
+	address customer?.address?:""
+	email customer?.email?:""
+	updatedAt customer?.lastUpdated?:""
+	createdAt customer?.dateCreated?:""
+	success true
+}

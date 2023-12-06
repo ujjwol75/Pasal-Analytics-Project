@@ -1,0 +1,10 @@
+import io.nuptse.pasal.product.Product
+
+model {
+    Product product
+}
+
+json {
+    price product?.pricePerUnit
+    success true
+}

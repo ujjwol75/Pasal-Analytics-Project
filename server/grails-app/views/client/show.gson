@@ -1,0 +1,10 @@
+import io.nuptse.pasal.Client
+
+model {
+	Client client
+}
+
+json {
+	data tmpl.client(client)
+	success true
+}

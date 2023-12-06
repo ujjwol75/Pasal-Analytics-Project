@@ -1,0 +1,15 @@
+import io.nuptse.pasal.LineItem
+
+model {
+  LineItem lineItem
+}
+
+json {
+  key lineItem.id
+  name lineItem.product.name
+  description lineItem.product.description
+  particulars lineItem.particulars
+  quantity lineItem.quantity
+  price lineItem.unitPrice
+  total lineItem.subTotal
+}

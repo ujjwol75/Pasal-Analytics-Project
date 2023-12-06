@@ -1,0 +1,10 @@
+import io.nuptse.pasal.auth.User
+
+model {
+	Iterable<User> userList
+}
+
+json {
+	data tmpl.user(userList ?: [])
+	success true
+}

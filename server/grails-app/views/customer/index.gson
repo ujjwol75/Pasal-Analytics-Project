@@ -1,0 +1,8 @@
+import io.nuptse.pasal.Customer
+
+model {
+	Iterable<Customer> customerList
+}
+
+json tmpl.customer(customerList ?: [])
+

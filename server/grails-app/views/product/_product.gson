@@ -1,0 +1,18 @@
+import io.nuptse.pasal.product.Product
+
+model {
+	Product product
+}
+
+// json g.render(product, [resolveTemplate: false])
+json {
+	id product?.id
+	name product?.name
+	pricePerUnit product?.pricePerUnit
+	description product?.description
+	lastUpdated product?.lastUpdated
+	vendor product?.vendor?.name ?: ""
+	vendorId product?.vendor?.id ?: ""
+	category product?.category?.name ?: ""
+	categoryId product?.category?.id ?: ""
+}

@@ -1,0 +1,9 @@
+import io.nuptse.pasal.Vendor
+
+model {
+    Vendor vendor
+}
+
+json {
+  success:true
+}

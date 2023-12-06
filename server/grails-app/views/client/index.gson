@@ -1,0 +1,10 @@
+import io.nuptse.pasal.Client
+
+model {
+	Iterable<Client> clientList
+}
+
+json {
+	data tmpl.client(clientList ?: [])
+	success true
+}

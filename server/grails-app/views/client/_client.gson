@@ -1,0 +1,20 @@
+import io.nuptse.pasal.Client
+
+model {
+	Client client
+}
+
+json {
+	id client?.id
+	name client?.name
+	email client?.email
+	description client?.description
+	phone client?.phone
+	address client?.address
+	code client?.code
+	url client?.url
+	displayName client?.displayName
+	pan client?.pan
+	vat client?.vat
+
+}

@@ -1,0 +1,10 @@
+import io.nuptse.pasal.auth.User
+
+model {
+	User user
+}
+
+json {
+	data tmpl.user(user)
+	success true
+}

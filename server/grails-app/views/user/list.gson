@@ -1,0 +1,8 @@
+model {
+    Iterable<Map> userList
+}
+
+json {
+    data userList ?: []
+    success true
+}

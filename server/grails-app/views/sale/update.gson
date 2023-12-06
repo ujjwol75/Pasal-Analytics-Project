@@ -1,0 +1,9 @@
+import io.nuptse.pasal.Sale
+
+model {
+    Sale customer
+}
+
+json {
+    success:true
+}

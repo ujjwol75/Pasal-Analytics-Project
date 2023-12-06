@@ -1,0 +1,10 @@
+import io.nuptse.pasal.product.Product
+
+model {
+	Iterable<Product> productList
+}
+
+json {
+	data tmpl.product(productList ?: [])
+	success true
+}

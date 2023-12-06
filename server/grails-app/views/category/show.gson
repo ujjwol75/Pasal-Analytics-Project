@@ -1,0 +1,10 @@
+import io.nuptse.pasal.product.Category
+
+model {
+	Category category
+}
+
+json {
+	data tmpl.category(category)
+	success true
+}

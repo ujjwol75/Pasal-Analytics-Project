@@ -1,0 +1,11 @@
+import io.nuptse.pasal.Vendor
+
+model {
+	Iterable<Vendor> vendorList
+}
+
+json {
+	data tmpl.vendor(vendorList ?: [])
+	success true
+}
+

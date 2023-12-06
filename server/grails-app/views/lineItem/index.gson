@@ -1,0 +1,7 @@
+import io.nuptse.pasal.LineItem
+
+model {
+  LineItem lineItem
+}
+
+json tmpl.lineItem(lineItem)

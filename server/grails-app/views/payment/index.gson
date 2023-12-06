@@ -1,0 +1,7 @@
+import io.nuptse.pasal.Payment
+
+model {
+  Payment payment
+}
+
+json tmpl.payment(payment)

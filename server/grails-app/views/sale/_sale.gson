@@ -1,0 +1,16 @@
+import io.nuptse.pasal.Sale
+import io.nuptse.pasal.utils.Constants
+
+model {
+    Sale sale
+}
+
+json {
+    id sale.id
+    billDate Constants.SALE_DATE_FORMAT.format(sale.billDate)
+    total sale.total
+    remarks sale.remarks
+    customer sale?.customer?.name
+    isCredit sale.isCredit
+    // lineItems sale.lineItems
+}

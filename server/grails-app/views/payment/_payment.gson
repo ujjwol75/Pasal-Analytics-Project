@@ -1,0 +1,14 @@
+import io.nuptse.pasal.Payment
+
+import java.text.SimpleDateFormat
+
+model {
+  Payment payment
+}
+
+json {
+  key payment.id
+  id payment.id
+  billDate new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(payment.billDate)
+  amount payment.amount
+}

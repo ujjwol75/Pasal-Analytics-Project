@@ -1,0 +1,10 @@
+import io.nuptse.pasal.product.Product
+
+model {
+	Product product
+}
+
+json {
+	data tmpl.product(product)
+	success true
+}

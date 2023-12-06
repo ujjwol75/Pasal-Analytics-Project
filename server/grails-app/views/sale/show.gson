@@ -1,0 +1,24 @@
+import io.nuptse.pasal.Sale
+
+import java.text.SimpleDateFormat
+
+model {
+    Sale sale
+}
+
+json {
+    id sale.id
+    billDate new SimpleDateFormat("MM-dd-yyyy").format(sale.billDate)
+    total sale.total
+    discount sale?.discount
+    remarks sale?.remarks
+    customer sale?.customer?.name
+    isCredit sale.isCredit
+    // lineItem g.render (sale.lineItems)
+    lineItems g.render(sale.lineItems)
+    payments g.render(sale.payments)
+    dues sale.duesAmount()
+    grossAmount sale.grossAmount()
+    partialTotal sale.totalPartialPayment()
+    success true
+}

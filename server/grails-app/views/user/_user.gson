@@ -1,0 +1,19 @@
+import io.nuptse.pasal.auth.User
+
+model {
+	User user
+}
+
+json {
+	id user?.id
+	username user?.username
+	avatarUrl user?.avatarUrl
+	firstName user?.firstName
+	lastName user?.lastName
+	country user?.country
+	address user?.address
+	description user?.description
+	phone user?.phone
+	email user?.email
+	client user?.client?.name
+}

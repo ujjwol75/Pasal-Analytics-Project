@@ -1,0 +1,13 @@
+import io.nuptse.pasal.product.Category
+
+model {
+    Category category
+}
+
+// json g.render(product, [resolveTemplate: false])
+json {
+    id category?.id
+    name category?.name
+    description category?.description
+    parentCategory category?.parentCategory?.name
+}

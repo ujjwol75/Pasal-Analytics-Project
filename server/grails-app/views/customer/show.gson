@@ -1,0 +1,7 @@
+import io.nuptse.pasal.Customer
+
+model {
+	Customer customer
+}
+
+json tmpl.customer(customer)
